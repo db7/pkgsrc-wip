@@ -1,0 +1,3 @@
+libvsync is a C header-only library that contains most essential building blocks for concurrent applications. That includes atomic operations, synchronization primitives and concurrent data structures.
+
+All synchronization primitives have been verified and optimized with respect to weak memory models (WMM).  All data structures have been verified with respect to WMM.

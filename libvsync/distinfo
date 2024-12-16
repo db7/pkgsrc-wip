@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (libvsync-4.0.2.tar.gz) = f6ecdf2916a2c8abf2d66d82065b2d83453c3ac26bfe7884c7e2c53775885597
+SHA512 (libvsync-4.0.2.tar.gz) = 8c73806ccb9821d274e5c5caeabeda5b9e67fb0c9f2cb131cf130f08aacd2f646ee0957a9941940292a21455b9db61240dc9df41d2e7fe196e7ac9d1a64928d6
+Size (libvsync-4.0.2.tar.gz) = 338408 bytes
