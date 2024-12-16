@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (tinymist-0.12.10.tar.gz) = fec12052445e09dc28ed91cfc0dc59163b4268c8f7307177e0525db1b6ec2d01
+SHA512 (tinymist-0.12.10.tar.gz) = 60395554414ca8dcfdbe8f3de0c08be5595977d7c6ab4a4f3e33edb4218833867789791d76f430b8ccde72edca4bc560090b9d74293ad78fe35978f7940b83e6
+Size (tinymist-0.12.10.tar.gz) = 941863 bytes
