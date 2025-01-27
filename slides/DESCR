@@ -1,0 +1,23 @@
+TODO: Adjust the following lines from README.md
+
+# Slides
+
+Slides in your terminal.
+
+<p align="center">
+  <img src="./assets/slides.gif?raw=true" alt="Slides Presentation" />
+</p>
+
+### Installation
+[![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/slides.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/slides)
+[![Snapcraft](https://snapcraft.io/slides/badge.svg)](https://snapcraft.io/slides)
+[![AUR](https://img.shields.io/aur/version/slides?label=AUR)](https://aur.archlinux.org/packages/slides)
+
+<details>
+<summary>Instructions</summary>
+
+#### MacOS
+```
+brew install slides
+```
+...

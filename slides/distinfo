@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (slides-0.9.0.tar.gz) = 57a83f830eec57d740838c4fc8a3c122ed8c0ede7f08e5aacfeb062ca3be9905
+SHA512 (slides-0.9.0.tar.gz) = b0dd3b4341e52d4bafe775e4a0039de898a8779cfabed10b69650da3f09610ce4de5c5917b06a4efedc15cd3b4a085b33718050fcb2fa018bb4d27530369f387
+Size (slides-0.9.0.tar.gz) = 326512 bytes
