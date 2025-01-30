@@ -1,0 +1,23 @@
+TODO: Adjust the following lines from README.md
+
+presenterm
+===
+
+[![crates-badge]][crates-package] [![brew-badge]][brew-package] [![nix-badge]][nix-package] 
+[![arch-badge]][arch-package] [![scoop-badge]][scoop-package]
+
+[brew-badge]: https://img.shields.io/homebrew/v/presenterm
+[brew-package]: https://formulae.brew.sh/formula/presenterm
+[nix-badge]: https://img.shields.io/badge/Packaged_for-Nix-5277C3.svg?logo=nixos&labelColor=73C3D5
+[nix-package]: https://search.nixos.org/packages?size=1&show=presenterm
+[crates-badge]: https://img.shields.io/crates/v/presenterm
+[crates-package]: https://crates.io/crates/presenterm
+[arch-badge]: https://img.shields.io/archlinux/v/extra/x86_64/presenterm
+[arch-package]: https://archlinux.org/packages/extra/x86_64/presenterm/
+[scoop-badge]: https://img.shields.io/scoop/v/presenterm
+[scoop-package]: https://scoop.sh/#/apps?q=presenterm&id=a462290f824b50f180afbaa6d8c7c1e6e0952e3a
+
+_presenterm_ lets you create presentations in markdown format and run them from your terminal, with support for image 
+and animated gifs, highly customizable themes, code highlighting, exporting presentations into PDF format, and 
+plenty of other features. This is how the [demo presentation](/examples/demo.md) looks like:
+...
