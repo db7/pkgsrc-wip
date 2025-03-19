@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (chicken-6.0.0pre1.tar.gz) = e382b59a54ce7bdc9e2528e53292c443c4ac58d543816dcfa227b67330824302
+SHA512 (chicken-6.0.0pre1.tar.gz) = 3247f5844393eba61c23c5371002a6462997d7c27f13bf93685325d10960c8cbef042baefb5b652eab8b1cdb098189169911b156caaffd07fd2fff04d58619ac
+Size (chicken-6.0.0pre1.tar.gz) = 4284693 bytes
