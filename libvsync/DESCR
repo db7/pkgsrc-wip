@@ -1,0 +1,23 @@
+TODO: Adjust the following lines from README.md
+
+# libvsync
+
+libvsync is a C header-only library that contains most essential building blocks for concurrent applications.
+That includes atomic operations, synchronization primitives and concurrent data structures.
+
+All synchronization primitives have been verified and optimized with respect to weak memory models (WMM).
+They also served as benchmarks for our ASPLOS'21 publication:
+[VSync: Push-Button Verification and Optimization for Synchronization Primitives on Weak Memory Models](https://dl.acm.org/doi/abs/10.1145/3445814.3446748).
+
+All data structures have been verified with respect to WMM.
+
+The currently open sourced implementations
+are algorithms from the literature implemented on top of our atomics, verified with model checkers,
+and optimized using vsyncer.
+
+We plan to gradually release more and more algorithms, including some of our own highly optimized algorithms.
+
+
+## API Documentation
+See [doc](doc/api/vsync/README.md) for details and usage examples.
+...
