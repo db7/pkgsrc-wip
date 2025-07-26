@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (teensy_loader_cli/2.3.tar.gz) = ce2e055dfc4a6b746c41ff2fa8ec56ecb7539c03d364252828fd3aed0b7241d1
+SHA512 (teensy_loader_cli/2.3.tar.gz) = 8de3477c461a865e09af23f2427d71d69ddcc3eab9bb328591b13a47432d81e53e1002b7d4ea1859f2bcbe35807b2ae58ef08cada1bb5fa1c0038cce0166ca72
+Size (teensy_loader_cli/2.3.tar.gz) = 127016 bytes

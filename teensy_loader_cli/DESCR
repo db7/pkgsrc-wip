@@ -1,0 +1,4 @@
+Teensy Loader - Command Line Version
+
+The Teensy Loader is a command line tool for users who want to automate
+programming, typically using a Makefile.
