@@ -1,0 +1,5 @@
+$NetBSD$
+
+BLAKE2s (scroll-0.1.tar.gz) = bccf6d38825d158607827f4d02757bfaba17462ec2c5e2f575129df671c3dc4b
+SHA512 (scroll-0.1.tar.gz) = c9223618fa671f83e8468dc55bd16cc5d229f33e25502b99eb627734b67f9f7a2547dee9b4e2bdd8af9f5da0f1d1a3c3ea1c4845921531c135c96dca7fe07006
+Size (scroll-0.1.tar.gz) = 7632 bytes
