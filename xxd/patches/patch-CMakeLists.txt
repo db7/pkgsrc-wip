@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- CMakeLists.txt.orig	2024-08-06 13:24:49.000000000 +0000
++++ CMakeLists.txt
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
++cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
+ 
+ set(CMAKE_C_STANDARD 11)
+ set(CMAKE_CXX_STANDARD_REQUIRED on)
+@@ -18,8 +18,10 @@ if (WIN32)
+ add_custom_command(
+         TARGET xxd POST_BUILD
+         COMMAND ${CMAKE_COMMAND} -E copy
+-                ${CMAKE_CURRENT_BINARY_DIR}/xxd.exe
++                ${CMAKE_CURRENT_BINARY_DIR}/${EXE}.exe
+                 ${CMAKE_SOURCE_DIR}
+                 )
+ 
+ endif (WIN32)
++
++install(TARGETS ${EXE} DESTINATION bin)

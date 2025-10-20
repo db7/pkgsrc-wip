@@ -1,0 +1,6 @@
+$NetBSD$
+
+BLAKE2s (xxd-1.2.tar.gz) = 9583f63ffa9ae480e9a9c8c6eeeb558df666de65a36f186dec6e8965a19d5d15
+SHA512 (xxd-1.2.tar.gz) = 8f3909da99fb9cc258cf766eefedbeb864597eb6cc87a59a89b48037037efc8a113d59fa24b1a925360d89d093a8cad60fda249ae84f2093440627b262ed438d
+Size (xxd-1.2.tar.gz) = 66468 bytes
+SHA1 (patch-CMakeLists.txt) = a973f7c196adaf0f672f48af937834b8b8f78a34
