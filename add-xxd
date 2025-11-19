@@ -1,0 +1,102 @@
+Index: wip/xxd/COMMIT_MSG
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/COMMIT_MSG	2025-11-19 11:47:08.644197526 +0100
+@@ -0,0 +1 @@
++Classic teensy_loader_cli for Teensy devices
+Index: wip/xxd/DESCR
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/DESCR	2025-11-19 11:46:53.969171062 +0100
+@@ -0,0 +1,23 @@
++TODO: Adjust the following lines from README.md
++
++﻿ckormanyos/xxd
++==================
++
++<p align="center">
++    <a href="https://github.com/ckormanyos/xxd/actions">
++        <img src="https://github.com/ckormanyos/xxd/actions/workflows/xxd.yml/badge.svg" alt="Build Status"></a>
++    <a href="https://github.com/ckormanyos/xxd/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
++        <img src="https://custom-icon-badges.herokuapp.com/github/issues-raw/ckormanyos/xxd?logo=github" alt="Issues" /></a>
++    <a href="https://sonarcloud.io/summary/new_code?id=ckormanyos_xxd">
++        <img src="https://sonarcloud.io/api/project_badges/measure?project=ckormanyos_xxd&metric=alert_status" alt="Quality Gate Status"></a>
++    <a href="https://codecov.io/gh/ckormanyos/xxd" > 
++        <img src="https://codecov.io/gh/ckormanyos/xxd/graph/badge.svg?token=EHGEJLSMSL"/></a>
++    <a href="https://github.com/ckormanyos/xxd/blob/master/LICENSE">
++        <img src="https://img.shields.io/badge/license-GPL%202.0-blue.svg" alt="GNU GENERAL PUBLIC LICENSE 2.0"></a>
++    <a href="https://godbolt.org/z/x8MGxf6fz" alt="godbolt">
++        <img src="https://img.shields.io/badge/try%20it%20on-godbolt-green" /></a>
++</p>
++
++This is the well-known hex-dump-type utility `xxd` commonly distributed
++as a part of the [vim-project](https://www.vim.org).
++...
+Index: wip/xxd/Makefile
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/Makefile	2025-11-19 11:46:53.963851703 +0100
+@@ -0,0 +1,18 @@
++# $NetBSD$
++
++DISTNAME=	xxd-1.2
++CATEGORIES=	devel
++MASTER_SITES=	${MASTER_SITE_GITHUB:=ckormanyos/}
++GITHUB_TAG=	refs/tags/v${PKGVERSION_NOREV}
++
++MAINTAINER=	pkgsrc-users@NetBSD.org
++HOMEPAGE=	https://github.com/ckormanyos/xxd/
++COMMENT=	hex-dump-type utility xxd
++#LICENSE=	# TODO: (see mk/license.mk)
++
++USE_LANGUAGES=	c c++
++
++WRKSRC=	${WRKDIR}/${DISTNAME}
++
++.include "../../devel/cmake/build.mk"
++.include "../../mk/bsd.pkg.mk"
+Index: wip/xxd/PLIST
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/PLIST	2025-11-19 11:46:53.962991352 +0100
+@@ -0,0 +1,2 @@
++@comment $NetBSD$
++bin/xxd
+Index: wip/xxd/distinfo
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/distinfo	2025-11-19 11:46:53.968043259 +0100
+@@ -0,0 +1,6 @@
++$NetBSD$
++
++BLAKE2s (xxd-1.2.tar.gz) = 9583f63ffa9ae480e9a9c8c6eeeb558df666de65a36f186dec6e8965a19d5d15
++SHA512 (xxd-1.2.tar.gz) = 8f3909da99fb9cc258cf766eefedbeb864597eb6cc87a59a89b48037037efc8a113d59fa24b1a925360d89d093a8cad60fda249ae84f2093440627b262ed438d
++Size (xxd-1.2.tar.gz) = 66468 bytes
++SHA1 (patch-CMakeLists.txt) = a973f7c196adaf0f672f48af937834b8b8f78a34
+Index: wip/xxd/patches/patch-CMakeLists.txt
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/xxd/patches/patch-CMakeLists.txt	2025-11-19 11:46:53.965877341 +0100
+@@ -0,0 +1,22 @@
++$NetBSD$
++
++--- CMakeLists.txt.orig	2024-08-06 13:24:49.000000000 +0000
+++++ CMakeLists.txt
++@@ -1,4 +1,4 @@
++-cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+++cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
++ 
++ set(CMAKE_C_STANDARD 11)
++ set(CMAKE_CXX_STANDARD_REQUIRED on)
++@@ -18,8 +18,10 @@ if (WIN32)
++ add_custom_command(
++         TARGET xxd POST_BUILD
++         COMMAND ${CMAKE_COMMAND} -E copy
++-                ${CMAKE_CURRENT_BINARY_DIR}/xxd.exe
+++                ${CMAKE_CURRENT_BINARY_DIR}/${EXE}.exe
++                 ${CMAKE_SOURCE_DIR}
++                 )
++ 
++ endif (WIN32)
+++
+++install(TARGETS ${EXE} DESTINATION bin)

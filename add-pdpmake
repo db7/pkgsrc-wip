@@ -1,0 +1,59 @@
+Index: wip/pdpmake/DESCR
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/pdpmake/DESCR	2025-11-19 11:40:36.042849276 +0100
+@@ -0,0 +1,7 @@
++# Public domain POSIX make
++
++This is an implementation of POSIX make:
++https://pubs.opengroup.org/onlinepubs/9799919799/utilities/make.html).
++
++It should build on most modernish Unix-style systems.
++
+Index: wip/pdpmake/Makefile
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/pdpmake/Makefile	2025-11-19 11:40:35.914491811 +0100
+@@ -0,0 +1,24 @@
++# $NetBSD$
++
++DISTNAME=		pdpmake-2.0.3
++CATEGORIES=		devel
++MASTER_SITES=		${MASTER_SITE_GITHUB:=rmyorston/}
++GITHUB_TAG=		${PKGVERSION_NOREV}
++
++MAINTAINER=		pkgsrc-users@NetBSD.org
++HOMEPAGE=		https://github.com/rmyorston/pdpmake/
++COMMENT=		Public domain POSIX make
++LICENSE=		public-domain
++
++CFLAGS.Darwin=		-D_DARWIN_C_SOURCE -Dst_mtim=st_mtimespec
++
++BUILD_TARGET=		make
++TEST_TARGET=		test
++
++INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
++
++do-install:
++	${INSTALL_PROGRAM} ${WRKSRC}/make ${DESTDIR}${PREFIX}/bin/pdpmake
++	${INSTALL_MAN} ${WRKSRC}/pdpmake.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
++
++.include "../../mk/bsd.pkg.mk"
+Index: wip/pdpmake/PLIST
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/pdpmake/PLIST	2025-11-19 11:40:35.913987162 +0100
+@@ -0,0 +1,3 @@
++@comment $NetBSD$
++bin/pdpmake
++man/man1/pdpmake.1
+Index: wip/pdpmake/distinfo
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/pdpmake/distinfo	2025-11-19 11:40:36.042462381 +0100
+@@ -0,0 +1,5 @@
++$NetBSD$
++
++BLAKE2s (pdpmake-2.0.3.tar.gz) = 8b349b9a7d8fc85e43054886e7b50d918538ce62f962a00c81e951113f1cdc20
++SHA512 (pdpmake-2.0.3.tar.gz) = 58faf7472709f12af203afe926830e3f82e21ee987226f2efa9d3744fd2b6727faa9091d7ded1ffb3f3cdb03e7b7278cc01675d86cf2b3796c49aecd24cf993e
++Size (pdpmake-2.0.3.tar.gz) = 47004 bytes

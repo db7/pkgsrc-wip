@@ -1,0 +1,62 @@
+Index: wip/teensy-loader/COMMIT_MSG
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/teensy-loader/COMMIT_MSG	2025-11-19 11:42:21.543592412 +0100
+@@ -0,0 +1 @@
++Classic teensy_loader_cli for Teensy devices
+Index: wip/teensy-loader/DESCR
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/teensy-loader/DESCR	2025-11-19 11:42:21.542802783 +0100
+@@ -0,0 +1,4 @@
++Teensy Loader - Command Line Version
++
++The Teensy Loader is a command line tool for users who want to automate
++programming, typically using a Makefile.
+Index: wip/teensy-loader/Makefile
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/teensy-loader/Makefile	2025-11-19 11:42:21.540239692 +0100
+@@ -0,0 +1,25 @@
++# $NetBSD$
++
++DISTNAME=	2.3
++PKGNAME=	${GITHUB_PROJECT}-${DISTNAME}
++CATEGORIES=	cross
++MASTER_SITES=	${MASTER_SITE_GITHUB:=PaulStoffregen/}
++GITHUB_PROJECT=	teensy_loader_cli
++GITHUB_TAG=	refs/tags/2.3
++DIST_SUBDIR=	${GITHUB_PROJECT}
++
++MAINTAINER=	pkgsrc-users@NetBSD.org
++HOMEPAGE=	https://github.com/PaulStoffregen/teensy_loader_cli/
++COMMENT=	Teensy loader
++LICENSE=	gnu-gpl-v3
++
++WRKSRC=		${WRKDIR}/teensy_loader_cli-2.3
++MAKE_FILE=	Makefile.bsd
++MAKE_ENV=	OS=NetBSD
++BUILD_TARGET=	teensy_loader_cli
++
++do-install:
++	mkdir -p ${DESTDIR}/usr/pkg/bin
++	${INSTALL} ${WRKSRC}/teensy_loader_cli ${DESTDIR}/usr/pkg/bin
++
++.include "../../mk/bsd.pkg.mk"
+Index: wip/teensy-loader/PLIST
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/teensy-loader/PLIST	2025-11-19 11:42:21.538481894 +0100
+@@ -0,0 +1,2 @@
++@comment $NetBSD$
++bin/teensy_loader_cli
+Index: wip/teensy-loader/distinfo
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/teensy-loader/distinfo	2025-11-19 11:42:21.541972721 +0100
+@@ -0,0 +1,5 @@
++$NetBSD$
++
++BLAKE2s (teensy_loader_cli/2.3.tar.gz) = ce2e055dfc4a6b746c41ff2fa8ec56ecb7539c03d364252828fd3aed0b7241d1
++SHA512 (teensy_loader_cli/2.3.tar.gz) = 8de3477c461a865e09af23f2427d71d69ddcc3eab9bb328591b13a47432d81e53e1002b7d4ea1859f2bcbe35807b2ae58ef08cada1bb5fa1c0038cce0166ca72
++Size (teensy_loader_cli/2.3.tar.gz) = 127016 bytes
