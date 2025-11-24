@@ -1,46 +1,53 @@
 Index: wip/tmplr/DESCR
 ===================================================================
---- wip.orig/tmplr/DESCR	2025-11-24 15:11:38.146748441 +0000
-+++ /dev/null	1970-01-01 00:00:00.000000000 +0000
-@@ -1 +0,0 @@
--tmplr is a tiny template preprocessor.
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/tmplr/DESCR	2025-11-24 20:48:39.547735234 +0100
+@@ -0,0 +1 @@
++tmplr is a tiny template preprocessor.
 Index: wip/tmplr/Makefile
 ===================================================================
---- wip.orig/tmplr/Makefile	2025-11-24 15:11:38.146748441 +0000
-+++ /dev/null	1970-01-01 00:00:00.000000000 +0000
-@@ -1,16 +0,0 @@
--# $NetBSD$
--
--DISTNAME=		tmplr-1.3.1
--CATEGORIES=		devel
--MASTER_SITES=		${MASTER_SITE_GITHUB:=open-s4c/}
--GITHUB_TAG=		refs/tags/v${PKGVERSION_NOREV}
--
--MAINTAINER=		db7@sdf.org
--HOMEPAGE=		https://github.com/open-s4c/tmplr/
--COMMENT=		Tiny template preprocessor
--LICENSE=		mit
--
--WRKSRC=			${WRKDIR}/${DISTNAME}
--INSTALL_MAKE_FLAGS=	PREFIX=${PREFIX}
--
--.include "../../mk/bsd.pkg.mk"
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/tmplr/Makefile	2025-11-24 20:48:39.548393224 +0100
+@@ -0,0 +1,17 @@
++# $NetBSD$
++
++DISTNAME=		tmplr-1.3.1
++CATEGORIES=		devel
++MASTER_SITES=		${MASTER_SITE_GITHUB:=open-s4c/}
++GITHUB_TAG=		refs/tags/v${PKGVERSION_NOREV}
++
++MAINTAINER=		db7@sdf.org
++HOMEPAGE=		https://github.com/open-s4c/tmplr/
++COMMENT=		Tiny template preprocessor
++LICENSE=		mit
++
++WRKSRC=			${WRKDIR}/${DISTNAME}
++MANDIR=			${PREFIX}/man/man1
++INSTALL_MAKE_FLAGS=	PREFIX=${PREFIX}
++
++.include "../../mk/bsd.pkg.mk"
 Index: wip/tmplr/PLIST
 ===================================================================
---- wip.orig/tmplr/PLIST	2025-11-24 15:11:38.146748441 +0000
-+++ /dev/null	1970-01-01 00:00:00.000000000 +0000
-@@ -1,4 +0,0 @@
--@comment $NetBSD$
--bin/tmplr
--include/tmplr.h
--share/man/man1/tmplr.1
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/tmplr/PLIST	2025-11-24 20:48:39.548807571 +0100
+@@ -0,0 +1,4 @@
++@comment $NetBSD$
++bin/tmplr
++include/tmplr.h
++share/man/man1/tmplr.1
 Index: wip/tmplr/distinfo
 ===================================================================
---- wip.orig/tmplr/distinfo	2025-11-24 15:12:49.640973545 +0000
-+++ /dev/null	1970-01-01 00:00:00.000000000 +0000
-@@ -1,5 +0,0 @@
--$NetBSD$
--
--BLAKE2s (tmplr-1.3.1.tar.gz) = 73ed5044b11cd1816a39e94ee27158e5b0456aeddb8ee2d807ffcd4851289db8
--SHA512 (tmplr-1.3.1.tar.gz) = 98009797d1bb0029b5cfd51a014e0323a635401e773aeab85eabceb07568034088d2642284df6af1e07edfb4d9e75cd74b5712432a94127dd30d1a36971be58e
--Size (tmplr-1.3.1.tar.gz) = 17507 bytes
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/tmplr/distinfo	2025-11-24 20:48:39.549174755 +0100
+@@ -0,0 +1,5 @@
++$NetBSD$
++
++BLAKE2s (tmplr-1.3.1.tar.gz) = 73ed5044b11cd1816a39e94ee27158e5b0456aeddb8ee2d807ffcd4851289db8
++SHA512 (tmplr-1.3.1.tar.gz) = 98009797d1bb0029b5cfd51a014e0323a635401e773aeab85eabceb07568034088d2642284df6af1e07edfb4d9e75cd74b5712432a94127dd30d1a36971be58e
++Size (tmplr-1.3.1.tar.gz) = 17507 bytes
+Index: wip/tmplr/COMMIT_MSG
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ wip/tmplr/COMMIT_MSG	2025-11-24 20:47:55.101160000 +0100
+@@ -0,0 +1 @@
++tmplr: Adding template tool v1.3.1
