@@ -1,0 +1,30 @@
+Index: wip/kakoune-lsp/Makefile
+===================================================================
+--- wip.orig/kakoune-lsp/Makefile	2026-01-06 13:17:57.352104992 +0000
++++ wip/kakoune-lsp/Makefile	2026-01-06 13:18:28.456104261 +0000
+@@ -1,7 +1,7 @@
+ # $NetBSD$
+ 
+ GITHUB_TAG=	v${PKGVERSION_NOREV}
+-DISTNAME=	kakoune-lsp-18.2.0
++DISTNAME=	kakoune-lsp-19.0.1
+ CATEGORIES=	editors
+ MASTER_SITES=	${MASTER_SITE_GITHUB:=kakoune-lsp/}
+ 
+Index: wip/kakoune-lsp/distinfo
+===================================================================
+--- wip.orig/kakoune-lsp/distinfo	2026-01-06 13:17:57.354104992 +0000
++++ wip/kakoune-lsp/distinfo	2026-01-06 13:18:28.456104261 +0000
+@@ -333,9 +333,9 @@
+ BLAKE2s (jsonrpc-core-18.0.0.crate) = cdf2880ac0212529525acf972c515759c8d993420247155e7c78c44477b274a7
+ SHA512 (jsonrpc-core-18.0.0.crate) = faa798f3522b3d81a1f754e07d3def6e1dabae853cb76412218724300c6e1f4a0e2789a23c9be6cf4b7081fa03d43f635b850989eae4233d970d66132fc14347
+ Size (jsonrpc-core-18.0.0.crate) = 16010 bytes
+-BLAKE2s (kakoune-lsp-18.2.0.tar.gz) = 134a70a3cf4afe52c28154b658abb3c312df496f9976423154681c09b2f5d3de
+-SHA512 (kakoune-lsp-18.2.0.tar.gz) = 215b87033bc8a5a94cafee2068c83757550ee4cce43567cce694fa185b27f752a2cc9479fc04c6e5441b7329c8e14e805ce026fd52fc78687897216847add0b6
+-Size (kakoune-lsp-18.2.0.tar.gz) = 183384 bytes
++BLAKE2s (kakoune-lsp-19.0.1.tar.gz) = e9d6141ef063659825a1f7aad68fb9c3b56fefd6f0eae4d1b0763608a412b661
++SHA512 (kakoune-lsp-19.0.1.tar.gz) = 41e24de32a79d5433ba28a8da6932574409d5a174ec48a0f6d33511642647834de4550fa183290e9ef0fcf01b1abef10d7fbf03c0079c7da2a536c15d4f74ee4
++Size (kakoune-lsp-19.0.1.tar.gz) = 189431 bytes
+ BLAKE2s (kqueue-1.0.8.crate) = 2deac25b62ab709abd9b6dbb2845d54f88f2e0ee4d3261b87331bff5487f0358
+ SHA512 (kqueue-1.0.8.crate) = c8734fa2cfbf8b8f173604acf5d13ad4cc2739c879387b548a1200f8383b81a1b72315449eb73844e4b82280a4c29901d20c12cdc746d48f9047db89849985f3
+ Size (kqueue-1.0.8.crate) = 12642 bytes
